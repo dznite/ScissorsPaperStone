@@ -21,7 +21,28 @@ function getHumanChoice(){
 
 // to.LowerCase() is a method, we have to always add the ()!
 
-var humanChoice = getHumanChoice();
-var computerChoice = getComputerChoice();
+var humanSelection = getHumanChoice();
+var computerSelection = getComputerChoice();
 
-console.log(humanChoice);
+// console.log(humanChoice);
+
+var humanScore = 0;
+var computerScore = 0;
+
+function playRound(humanChoice,computerChoice){
+    if (humanChoice == computerChoice.toLowerCase()){
+        return `It's a tie! You both played ${humanChoice}`
+    }
+
+    else if (humanChoice == "rock"){
+        if (computerChoice == "Paper"){
+            return "You lose! Paper beats Rock.";
+            computerScore =+ 1;
+        } else if (computerChoice == "Scissors"){
+            return "You win! Rock beats Scissors.";
+            humanScore =+ 1;
+        }
+    }
+    }
+
+    console.log(playRound(humanSelection,computerSelection));
