@@ -1,4 +1,4 @@
-console.log("Hello world");
+// console.log("Hello world");
 
 function getComputerChoice(){
     var rng = Math.random();
@@ -11,4 +11,12 @@ function getComputerChoice(){
     }
 }
 
-console.log(getComputerChoice());
+// console.log(getComputerChoice());
+
+function getHumanChoice(){
+    var input = prompt("Rock, Paper or Scissors?");
+    return input;
+}
+
+var humanChoice = getHumanChoice();
+var computerChoice = getComputerChoice();
