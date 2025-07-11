@@ -20,3 +20,5 @@ function getHumanChoice(){
 
 var humanChoice = getHumanChoice();
 var computerChoice = getComputerChoice();
+
+console.log(humanChoice.toLowerCase());
