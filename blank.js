@@ -12,13 +12,16 @@ function getComputerChoice(){
 }
 
 // console.log(getComputerChoice());
+// We CAN print a function in the console, but remember to ass the ()!
 
 function getHumanChoice(){
     var input = prompt("Rock, Paper or Scissors?");
-    return input;
+    return input.toLowerCase();
 }
+
+// to.LowerCase() is a method, we have to always add the ()!
 
 var humanChoice = getHumanChoice();
 var computerChoice = getComputerChoice();
 
-console.log(humanChoice.toLowerCase());
+console.log(humanChoice);
