@@ -36,13 +36,17 @@ function playRound(humanChoice,computerChoice){
 
     else if (humanChoice == "rock"){
         if (computerChoice == "Paper"){
+            computerScore += 1;
             return "You lose! Paper beats Rock.";
-            computerScore =+ 1;
         } else if (computerChoice == "Scissors"){
+            humanScore += 1;
             return "You win! Rock beats Scissors.";
-            humanScore =+ 1;
         }
     }
     }
 
+    // RETURN HAS TO BE THE LAST STATEMENT, IF NOT ALL CODE AFTERWARDS IS UNREACHABLE
+
     console.log(playRound(humanSelection,computerSelection));
+    console.log(humanScore);
+    console.log(computerScore);
