@@ -67,6 +67,14 @@ function playRound(humanChoice,computerChoice){
 
     // RETURN HAS TO BE THE LAST STATEMENT, IF NOT ALL CODE AFTERWARDS IS UNREACHABLE
 
-    console.log(playRound(humanSelection,computerSelection));
-    console.log(`Your current score: ${humanScore}`);
-    console.log(`The opponent's current score: ${computerScore}`);
+    // console.log(playRound(humanSelection,computerSelection));
+    // console.log(`Your current score: ${humanScore}`);
+    // console.log(`The opponent's current score: ${computerScore}`);
+
+    function playGame(){
+        console.log(playRound(humanSelection,getComputerChoice()));
+        console.log(`Your current score: ${humanScore}`);
+        console.log(`The opponent's current score: ${computerScore}`)
+    }
+
+    playGame();
