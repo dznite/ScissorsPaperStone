@@ -61,7 +61,7 @@ function playRound(humanChoice,computerChoice){
             return "You lose! Rock beats Scissors.";
         } else if (computerChoice == "Paper"){
             humanScore += 1;
-            return "You win! Scissors beats Rock.";
+            return "You win! Scissors beats Paper.";
         }
     }
     }
@@ -89,7 +89,7 @@ function playRound(humanChoice,computerChoice){
             alert("Unfortunately, you lost");
         } else if (computerScore == humanScore){
             console.log(`It's a tie!`)
-            alert("you both tied!")
+            alert("You both tied!")
         }
     }
 
