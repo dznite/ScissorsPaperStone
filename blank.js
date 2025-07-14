@@ -72,6 +72,8 @@ function playRound(humanChoice,computerChoice){
     // console.log(`Your current score: ${humanScore}`);
     // console.log(`The opponent's current score: ${computerScore}`);
 
+    alert("Please open the console to view game log\n CMD + Option + J on Mac\n Ctrl + Shift + J on Windows")
+
     function playGame(){
         for (let i = 0; i < 5; i++){
             console.log(playRound(getHumanChoice(),getComputerChoice()));
@@ -79,18 +81,16 @@ function playRound(humanChoice,computerChoice){
             console.log(`The opponent's current score: ${computerScore}`)
             console.log(' ')
         }
-
-
-        if (humanScore > computerScore){
-            console.log(`You are the winner!`)
-            alert("You won!");
-        } else if (computerScore > humanScore){
-            console.log(`The opponent won`)
-            alert("Unfortunately, you lost");
-        } else if (computerScore == humanScore){
-            console.log(`It's a tie!`)
-            alert("You both tied!")
-        }
+            if (humanScore > computerScore){
+                console.log(`You are the winner!`)
+             alert("You won!");
+             } else if (computerScore > humanScore){
+                console.log(`The opponent won`)
+                alert("Unfortunately, you lost");
+             } else if (computerScore == humanScore){
+                console.log(`It's a tie!`)
+                alert("You both tied!")
+            }
     }
 
     playGame();
