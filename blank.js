@@ -43,10 +43,30 @@ function playRound(humanChoice,computerChoice){
             return "You win! Rock beats Scissors.";
         }
     }
+
+    else if (humanChoice == "paper"){
+        if (computerChoice == "Scissors"){
+            computerScore += 1;
+            return "You lose! Scissors beats Paper.";
+        } else if (computerChoice == "Rock"){
+            humanScore += 1;
+            return "You win! Paper beats Rock.";
+        }
+    }
+
+    else if (humanChoice == "scissors"){
+        if (computerChoice == "Rock"){
+            computerScore += 1;
+            return "You lose! Rock beats Scissors.";
+        } else if (computerChoice == "Paper"){
+            humanScore += 1;
+            return "You win! Scissors beats Rock.";
+        }
+    }
     }
 
     // RETURN HAS TO BE THE LAST STATEMENT, IF NOT ALL CODE AFTERWARDS IS UNREACHABLE
 
     console.log(playRound(humanSelection,computerSelection));
-    console.log(humanScore);
-    console.log(computerScore);
+    console.log(`Your current score: ${humanScore}`);
+    console.log(`The opponent's current score: ${computerScore}`);
