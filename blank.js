@@ -1,4 +1,4 @@
-// console.log("Hello world");
+
 
 function getComputerChoice(){
     var rng = Math.random();
@@ -11,7 +11,7 @@ function getComputerChoice(){
     }
 }
 
-// console.log(getComputerChoice());
+
 // We CAN print a function in the console, but remember to ass the ()!
 
 function getHumanChoice(){
@@ -21,11 +21,9 @@ function getHumanChoice(){
 
 // to.LowerCase() is a method, we have to always add the ()!
 
-// var humanSelection = getHumanChoice();
+
     // when you define a new variable to a function, it automatically gets called!
 var computerSelection = getComputerChoice();
-
-// console.log(humanChoice);
 
 var humanScore = 0;
 var computerScore = 0;
@@ -68,10 +66,6 @@ function playRound(humanChoice,computerChoice){
 
     // RETURN HAS TO BE THE LAST STATEMENT, IF NOT ALL CODE AFTERWARDS IS UNREACHABLE
 
-    // console.log(playRound(humanSelection,computerSelection));
-    // console.log(`Your current score: ${humanScore}`);
-    // console.log(`The opponent's current score: ${computerScore}`);
-
     alert("Please open the console to view game log\n CMD + Option + J on Mac\n Ctrl + Shift + J on Windows")
 
     function playGame(){
@@ -83,7 +77,7 @@ function playRound(humanChoice,computerChoice){
         }
             if (humanScore > computerScore){
                 console.log(`You are the winner!`)
-             alert("You won!");
+                alert("You won!");
              } else if (computerScore > humanScore){
                 console.log(`The opponent won`)
                 alert("Unfortunately, you lost");
