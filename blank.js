@@ -21,7 +21,8 @@ function getHumanChoice(){
 
 // to.LowerCase() is a method, we have to always add the ()!
 
-var humanSelection = getHumanChoice();
+// var humanSelection = getHumanChoice();
+    // when you define a new variable to a function, it automatically gets called!
 var computerSelection = getComputerChoice();
 
 // console.log(humanChoice);
@@ -72,9 +73,24 @@ function playRound(humanChoice,computerChoice){
     // console.log(`The opponent's current score: ${computerScore}`);
 
     function playGame(){
-        console.log(playRound(humanSelection,getComputerChoice()));
-        console.log(`Your current score: ${humanScore}`);
-        console.log(`The opponent's current score: ${computerScore}`)
+        for (let i = 0; i < 5; i++){
+            console.log(playRound(getHumanChoice(),getComputerChoice()));
+            console.log(`Your current score: ${humanScore}`);
+            console.log(`The opponent's current score: ${computerScore}`)
+            console.log(' ')
+        }
+
+
+        if (humanScore > computerScore){
+            console.log(`You are the winner!`)
+            alert("You won!");
+        } else if (computerScore > humanScore){
+            console.log(`The opponent won`)
+            alert("Unfortunately, you lost");
+        } else if (computerScore == humanScore){
+            console.log(`It's a tie!`)
+            alert("you both tied!")
+        }
     }
 
     playGame();
